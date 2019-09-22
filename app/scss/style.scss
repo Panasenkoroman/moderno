@@ -13,7 +13,7 @@
     margin-left: auto;
     margin-right: 27px;
     font-size: 15px;
-    font-weight: 400;
+    @include f700;
     line-height: 24px;
     span{
         color: $red;
@@ -45,7 +45,7 @@ background-color: $bg;
 }
 .menu__list{
     font-size: 14px;
-    font-weight: 500;
+    @include f500;
     li{
         display: inline-block;
         & + li{
@@ -71,14 +71,14 @@ background-color: $bg;
     padding: 156px 0px 100px;
     &-title{
         font-size: 48px;
-        font-weight: 700;
+        @include f700;
         margin-bottom: 10px;
         line-height: 72px;
     }
     &-text{
         font-size: 20px;
         margin-bottom: 40px;
-        font-weight: 500;
+        @include f500;
     line-height: 30PX;
     }
     &-form{
@@ -94,13 +94,13 @@ background-color: $bg;
             height: 56px;
             border: none;
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
             padding-left: 25px;
             padding-right: 50px;
             letter-spacing: 0.7px;
             &::placeholder{
                 color: #90a4ae;
-                font-weight: 500;
+                @include f500;
                 
             }
         }
@@ -123,13 +123,13 @@ background-color: $bg;
     margin-top: 121px;
     margin-bottom: 60px;
     font-size: 36px;
-    font-weight: 700;
+    @include f700;
     line-height: 60px;
     }
      ul{
          
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
      }
      li{
          transition: all .3s;
@@ -157,7 +157,7 @@ background-color: $grey;
 }
 .products__title{
     font-size: 36px;
-    font-weight: 700;
+    @include f700;
     line-height: 60px;
     color: $bg;
 }
@@ -204,7 +204,7 @@ justify-content: space-between;
 padding: 10px 30px;
 align-items: center;
 min-height: 90px;
-font-weight: 500px;
+@include f500;
 border-bottom: 1px solid#e7ecf2;
 }
 &-name{
@@ -224,7 +224,7 @@ font-size: 14px;
 &-price{
     font-size: 20px;
     color: $bg;
-    font-weight: 700;
+    @include f700;
 }
 &-info{
 display: flex;
@@ -250,7 +250,7 @@ min-height: 70px;
     }
     span{
     font-size: 14px;
-    font-weight: 500;
+    @include f500;
     }
     &-star{
         font-size: 12px;
@@ -283,7 +283,7 @@ min-height: 70px;
 // end products
 //start product-slider
 .product-slider{
-padding: 110px 0px 12px;
+    padding: 110px 0px 12px;
 .slick-dots{
     text-align: center;
     li{
@@ -311,3 +311,77 @@ padding: 110px 0px 12px;
     }
 }
 }
+// end product-slider
+// start advantages
+
+.advantages{
+    text-align: center;
+    background-color: $bg;
+    padding: 110px 0;
+}
+    .advantages__title{
+        color:#fff;
+    }
+.advantages__inner{
+    display: flex;
+    justify-content: space-between;
+}
+    .advantages__item{
+    min-width: 370px;
+    text-align: center;
+    padding: 0px 15px;
+    
+    &:hover{
+        .advantages__item-images{
+        background-color: $green;
+        }
+        .advantages__item-title{
+        color: $green;
+        }
+        .advantages__item-images{
+            g{
+                fill: #fff;
+            }
+        }
+    }
+    &-images{
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all .3s;
+    }
+    &-title{
+    font-size: 24px;
+    @include f500;
+    margin-bottom: 26px;
+    transition: all .3s;
+    color: #fff;
+
+    }
+    &-text{
+    font-size: 14px;
+    }
+
+    }
+    .icosvg-1{
+        svg{
+    width: 50px;
+        }
+        }
+
+    .icosvg-2{
+        svg{
+            width: 70px;
+                }
+    }
+    .icosvg-1{
+        svg{
+            width: 86px;
+                }
+    }
+// end advantages
