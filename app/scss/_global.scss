@@ -15,7 +15,7 @@ body{
 a{
     display: inline-block;
     text-decoration: none;
-    color:$color-text;
+    color:$text;
 }
 ul,
 li{
@@ -26,8 +26,9 @@ li{
 }
 body{
     font-family: 'Roboto-Regular', sans-serif;
-    color:$color-text;
+    color:$text;
     font-weight: 400;
+    line-height: 24px;
 }
 .wrapper {
 	display: flex;
