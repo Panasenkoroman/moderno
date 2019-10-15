@@ -97,6 +97,13 @@
     }
 }
 @media (max-width: 1000px){
+    .slick-initialized .slick-slide{
+    .product__item{
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+    
     .tutorial__inner{
         flex-wrap: wrap;
     }
@@ -119,6 +126,7 @@
     
 }
 @media (max-width: 900px){
+    
     .advantages__inner{
         display: block;
     }
