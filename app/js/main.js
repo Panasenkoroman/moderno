@@ -32,7 +32,7 @@ $(function(){
         }
       },
       {
-        breakpoint: 801,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 3,
